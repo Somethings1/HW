@@ -1,4 +1,4 @@
-var i, j, k, n: longint;
+var i, j, n: longint;
     check: boolean;
 function isPrime(a: longint): boolean;
 var i: integer;
@@ -11,16 +11,14 @@ end;
 begin
   check := false;
   read(n);
-  for i := 1 to n do
-    for j := i + 1 to n do
-      for k := j + 1 to n do
-        if (i * i + j * j = k) and
-            isPrime(i) and
-            isPrime(j) and
-            isPrime(k) then
-          begin
-            check := true;
-            writeln(i, ' ', j, ' ', k);
-          end;
+  for i := 3 to trunc(sqrt(n)) do
+    begin
+      j := 4 + i * i;
+      if isPrime(i) and isPrime(j) then
+        begin
+          writeln(2, ' ', i, ' ', j);
+          check := true;
+        end;
+    end;
   if not check then write(-1);
 end.
