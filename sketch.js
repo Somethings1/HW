@@ -76,6 +76,8 @@ phanTich = n => {
 //STEP. This function's parameter is an array, and will return the number of stair number in the array
 getNumberOfStepNumber = n => n.filter(c => isStairNumber(c)).length;
 
+//QMAX. AHHHhhhhhh. This problem is really hard. You need an 2D array, and very big numbers. I do not have much time to test, so I do not make this funcion, either. But if you want, I have a pascal version for you. Check out the files.
+
 //PALWORD. This function has a parameter as a string, and return an array contains all the mirror word in the string (use getMirrorWord.length to count how many word)
 getMirrorWord = s => s.split(' ').filter(c => c == c.split('').reverse().join(''));
 
