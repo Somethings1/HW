@@ -24,7 +24,7 @@ begin
   readln(a, b, c);
   if (a + b + c <> 180) then writeln('Vui lòng nhập lại')
   else if (a = 90) or (b = 90) or (c = 90) then writeln('Tam giác vuông')
-  else if (a < 90) or (b < 90) or (c < 90) then writeln('Tam giác nhọn')
+  else if (a < 90) and (b < 90) and (c < 90) then writeln('Tam giác nhọn')
   else writeln('Tam giác tù');
   readln;
 end.
