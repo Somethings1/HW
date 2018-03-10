@@ -16,7 +16,7 @@ begin
       j := 4 + i * i;
       if isPrime(i) and isPrime(j) then
         begin
-          write(2, ' ', i, ' ', j);
+          writeln(2, ' ', i, ' ', j);
           check := true;
         end;
     end;
