@@ -1,0 +1,39 @@
+﻿{Phần khai báo program và uses srt là đương nhiên nên sẽ ko thêm vào. Bài 1 và bài 2 đều có phần khai báo như nhau là var n:integer;t:longint}
+//Bài 1
+begin
+  readln(n);
+  if (n <= 100) then t := n * 550;
+  else if (n > 100) and (n <= 150) then t := 55000 + (n - 100) * 1110
+  else if (n > 150) and (n <= 200) then t := 110500 + (n - 150) * 1470
+  else t := 184000 + (n - 200) * 1600;
+  writeln(t + (t div 10));
+  readln;  
+end.
+//Bài 2
+begin
+  readln(n);
+  if (n <= 1) then t := n * 5000
+  else if (n >= 2) and (n <= 5) then t := 5000 + (n - 1) * 4500
+  else t := 23000 + (n - 5) * 3500;
+  writeln(t);
+  readln;
+end.
+//Bài 3
+var a, b, c: real;
+begin
+  readln(a, b, c);
+  if (a + b + c <> 180) then writeln('Vui lòng nhập lại')
+  else if (a = 90) or (b = 90) or (c = 90) then writeln('Tam giác vuông')
+  else if (a < 90) or (b < 90) or (c < 90) then writeln('Tam giác nhọn')
+  else writeln('Tam giác tù');
+  readln;
+end.
+//Bài 4
+var score: real;
+begin
+  read(score);
+  if score <= 5.0 then writeln('Kém')
+  else if (score > 5.0) and (score < 6.5) then writeln('Trung bình')
+  else if (score >= 6.5) and (score < 8.0) then writeln('Khá')
+  else writeln('Giỏi');
+end.
