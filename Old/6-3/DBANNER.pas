@@ -17,5 +17,5 @@ begin
       temp := temp + (i - j + 1);
       if temp > max then max := temp;
     end;
-  write(max);
+  write(max - 1);
 end.
